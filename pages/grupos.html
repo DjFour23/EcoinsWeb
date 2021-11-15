@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- Estilo CSS -->
+<link rel="stylesheet" href="../css/estilo.css">
+<!-- Icono -->
+<link rel="shortcut icon" href="../img/Logo mundo.png">
+<script src="cargarUsuario.js"></script>
+<title>Register form</title>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="">
+          <img class="logo" src="../img/Logo letras blancas.png" style="width: 30%; " alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Log out</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active me-2" href="regusuario.html">Registro Estudiantes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <br><br>
+  <center><br>
+    <h1>Administracion de grupos</h1>
+    <br><br><br>
+    <div class="table-responsive-md">
+      <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">$Ecoins</th>
+            <th scope="col">Mostrar Grupo</th>
+            <th scope="col">Editar grupo</th>
+            <th scope="col">Eliminar Grupo</th>
+          </tr>
+        </thead>
+        <tbody id="usuarios-tabla">
+          <tr>
+            <td>an</td>
+            <td>ap</td>
+            <!--Agregar botones cada que se le de a listar (aun no me sale)-->
+            <td><button onclick="location.href='showGrupos.html'" class="btn btn-primary">Show</button></td>
+            <td><button onclick="location.href='editGrupo.html'" class="btn btn-primary">Edit</button></td>
+            <td><button onclick="location.href='#'" class="btn btn-primary">Destroy</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <form action="#">
+      <div class="container">
+        <div class="card border-primary mt-3 mb-3" style="max-width: 20rem;">
+          <div class="card-header">
+            <h4>Nuevo grupo</h4>
+          </div>
+          <div class="card-body text-primary">
+            <div class="row">
+              <div>
+                <br>
+                <input type="text" placeholder="Nombre" id="Nombre" class="form-control" required><br>
+                <input type="number" placeholder="Ecoins" id="Ecoins" class="form-control" required><br>
+                <button onclick="nuevo()" class="btn btn-primary">Listar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </center>
+</body>
+</html>

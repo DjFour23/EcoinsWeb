@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- Estilo CSS -->
+<link rel="stylesheet" href="../css/estilo.css">
+<!-- Icono -->
+<link rel="shortcut icon" href="../img/Logo mundo.png">
+<script src="cargarUsuario.js"></script>
+<title>Register form</title>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="">
+          <img class="logo" src="../img/Logo letras blancas.png" style="width: 30%; " alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Log out</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active me-2" href="regusuario.html">Registro Estudiantes</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active me-2" href="grupos.html">Administracion de grupos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <br><br>
+  <center><br>
+    <h1>Name grupo</h1>
+    <br>
+    <h3>Ecoins: 777</h3>
+     
+    <br>
+    <form action="#">
+      <div class="container">
+        <div class="card border-primary mt-3 mb-3" style="max-width: 20rem;">
+          <div class="card-header">
+            <h4>Integrantes</h4>
+          </div>
+          <div class="card-body text-primary">
+            <div class="row">
+              <div class="col-x1-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <br>
+                <input type="text" placeholder="Nombre de la empresa" id="nameEmpresa" class="form-control"required><br>
+                <input type="number" placeholder="Ingrese Ecoins" id="Ecoins"class="form-control" required><br>
+                <button onclick="validacionLg()" class="btn btn-primary">Update grupo</button>
+                <input type="reset" value="Borrar" class="btn btn-danger">
+            </div> 
+            </div>
+            <br><button onclick="location.href='showGrupos.html'" class="btn btn-primary">Show</button>
+            <button onclick="location.href='Grupos.html'" class="btn btn-danger">Back</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </center>
+</body>
+</html>
